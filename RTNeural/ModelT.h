@@ -363,6 +363,16 @@ public:
         return std::get<Index>(layers);
     }
 
+    RTNEURAL_REALTIME int getInSize() const noexcept
+    {
+        return in_size;
+    }
+
+    RTNEURAL_REALTIME int getOutSize() const noexcept
+    {
+        return out_size;
+    }
+
     /** Resets the state of the network layers. */
     RTNEURAL_REALTIME void reset()
     {
